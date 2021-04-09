@@ -3,10 +3,11 @@
 <head>
                <meta charset="utf-8">
                <title>Page Title</title>
+               <style>h1{color: #cc0000;}
                <link>index.html</link>
 </head>
 <body>
-    <header><h1>style= "color: #cc0000;"</h1></header>
+    <header><h1></h1></header>
     <main></main>
         
   <footer></footer>
