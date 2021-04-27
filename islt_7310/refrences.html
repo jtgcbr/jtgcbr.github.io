@@ -7,19 +7,49 @@
                 href="style.css"> 
                 <link rel="navsheet"
                 href="nav.css">
+                <style>
+                    /*entire page style*/
+                    * {margin: 0; padding: 0;}
+                    body {margin: 1% auto; width: 90%;;}
+        
+                    /*semantic element styles*/
+                    header {border-top:3px;}
+                    nav {border-top: 1px solid;}
+                    main {float: right; height: 500px; width: 84%;}
+                    img {float: left; width: 100px; height: 100px;}
+                    footer {border-top: 1px solid black; clear: both;}
+                    ul{
+                          display: flex;
+                         flex-direction: row;
+                         list-style-type: none;
+                         padding: 0;
+                         margin: 0;
+                     }
+                     li{
+                         display: inline;
+                         background: rgb(253, 76, 76);
+                         width: 150px;
+                         margin: 0 15px 15px 0;
+                         padding: 5px;
+                         text-align: center; }
+                    </style>
 </head>
 <body>
+    <nav> <ul>
+        <li><a href="index.html">HomePage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="learn.html">Learn</a>
+        <ul>
+            <li><a>Link1</a></li>
+            <li><a>Link2</a></li>
+            <li><a>Link3</a></li>
+            </ul>
+        </li>
+        <li><a href="refrences.html">Refrences</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+    </ul></nav>
     <header><h1>Refrences</h1></header>
     <main>
-        <nav> <ul>
-            <li><a href="index.html">HomePage</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
-                <ul>
-                <a><li>Link1</li>
-                   <li>Link2</li>
-                   <li>Link3</li></a>
-                   </ul>
            <p> B. (2019, June 11). Top 5 tips purchasing disney world tickets. Retrieved March 18, 2021, from https://youtu.be/ttJH6QXUoAY</p>
         
             <p>Chatter, M. (2020, February 25). How to plan the cheapest disney world vacation possible. Retrieved March 18, 2021, from https://mickeychatter.com/trip-budgeting/how-to-plan-the-cheapest-disney-world-vacation-possible/#:~:text=How%20to%20Plan%20the%20Cheapest%20Disney%20World%20Vacation,work,%20then%20use%20a%20Disney%20Earmarked%20Travel%20Agency.</p>
