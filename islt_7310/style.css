@@ -27,8 +27,11 @@ li{
      footer {border-top: 1px solid black; clear: both;}
 
 }
-@media print
-  /*print styles*/
+@media print {
+/<h1>; <p>; <blockquote>; <footer>/
+#ul; #nav; #img; {display: none}
+}
+
   
 
 
