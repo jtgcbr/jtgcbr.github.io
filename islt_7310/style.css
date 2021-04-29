@@ -53,6 +53,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+}
   @font-face {
     font-family: firstfont ;
     src: url(sansation_light.woff);
@@ -86,7 +87,10 @@ li{
 /<h1>; <p>; <blockquote>; <footer>/
 #ul; #nav; #img;  {display: none} 
 {font-family:serif; color:black }
+}
 
+footer {
+  background-image:url(../background\ image.jfif); background-repeat:repeat;background: size 100px;px; width: 3000px; height: 65px}
 }
 
   
