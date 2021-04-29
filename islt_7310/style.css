@@ -18,6 +18,7 @@ li{
     padding: 5px;
     text-align: center;
 }
+
 /*media queries*/ 
 @media screen and (max-width:640px)
      header {border-top:3px;}
@@ -29,15 +30,9 @@ li{
 }
 @media print {
 /<h1>; <p>; <blockquote>; <footer>/
-#ul; #nav; #img; {display: none}
+#ul; #nav; #img;  {display: none} 
+{font-family:serif; color:black }
+
 }
 
   
-
-
-
-
-
-
-
-<footer {background-image: url(..);}

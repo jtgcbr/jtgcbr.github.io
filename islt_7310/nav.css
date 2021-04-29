@@ -7,307 +7,57 @@ margin-top: 0;
 margin-left: 10px;
 }
 
-Author: Erin Weaver
-Create Date: 28 March 2021
-Revised: 17 April 2021
-
-Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
-*/  
-
-/*Menu Base Styles*/
-
-.active a:link {
-background-color: #addcolor;
+h1 { color:black;}
+nav {justify-content: center;
 }
 
-.navbar{
-font-family: 'addfont, sans-serif;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-nav {
-justify-content: flex-start;
-margin: 0;
-padding: 20px;
-display: flex;
-align-items: center;  
-background-color: #color;  
+li {
+  float: center;
 }
 
-nav ul {
-list-style-type: none;
-padding: 0px;
-margin: 0; 
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-nav ul li {
-float: right;
-position: relative;
-text-align: center;
-font-weight: bold;
-color: white;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-nav a {
-text-decoration: none;
-display: inline-block;
-border: 3px solid #72B0D5;
-padding: 10px 10px 10px 10px;
-width: auto;
-margin: 2px; 
-color:black
+li.dropdown {
+  display: inline-block;
 }
 
-nav a:hover, nav a:focus{
-background-color:  rgb(253, 76, 76);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-nav a:active{
-background-color: #c2e234;
-color: white;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-nav ul li ul{
-position: absolute;
-top: 100%;
-display: none;
-z-index: 999;
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-nav ul ul li {
-float: none;  
-}
-
-nav ul li:hover ul{
-display: block;
-}
-
-.navbar label, .hamburger {display:none;}
-
-/*Responsive Media*/
-
-@media screen and (max-width:992px){
-
-#logo {
-    display: flex;
-    position: absolute;
-    max-width: 100px;
-    margin: 10px;
-    height: 25px;
-    top: 10px;
-    left: 25px; 
-}
-
-.hamburger {
-    display: block;
-    height: 50px;
-    width: 50px;
-    z-index: 999;
-    opacity: 0;
-}
-
-
-nav ul, nav:active ul {
-    display: none; 
-    position: absolute;
-}
-
-nav ul:hover {
-    display: block;
-}
-
-nav li {
-    text-align: center;
-    width: 100%; 
-}
-
-.navbar label, hamburger {
-    display: block;
-    color: white;
-    font-style: normal;
-    font-size: 3em;
-    padding: 0;
-    position: absolute;
-    right: 33px;
-}
-
-.hamitems a{
-    width: 70px;
-    border-top: 1px solid #333;
-    text-decoration: none;
-    display: block;
-    border: 3px solid #72B0D5;
-    padding: 5px;
-    width: 70px;
-    margin: 0; 
-    color:black
-    }
-
-.hamitems{
-    display: flex;
-    flex-direction: column;
-    top: 70px;
-    right: -305px;
-    z-index: 999;
-}
-
-.hamitems{ display: none}
-.navbar input:checked ~ .hamitems {display:block;}
-
-nav ul li ul {
-    z-index: 999;
-    right: 430px;
-    top: -5px;
-}
-
-/*Home Page*/
-.hwrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 10px; 
-}
-
-.hbaseline{
-    display: block;
-    bottom: 0px;
-    position: relative; 
-
-}
-
-.htext{
-    font-size: 14pt;
-}
-
-/*About Page*/
-.awrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 5px; 
-}
-
-.atext {
-    margin: 20px;
-    font-size: 14pt;
-}
-
-a.special {
-position: relative;
-top: -25px;
-}
-
-#Erin {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 20%;
-    height: auto;
-    border: solid black 5px;
-    position: relative;
-    top: 30px;
-}
-
-/*Projects Page*/
-.pwrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-.ptext{
-    margin: 5px; 
-    font-size: 14pt;
-}
-
-#CL_logo{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 20%;
-    height: auto;
-    border: solid black 5px;
-    position: relative;
-    top: 30px;
-}
-/*
-#DNA{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 20%;
-    height: auto;
-    border: solid black 5px;
-    position: relative;
-    top: 1000px;
-}
-*/
-
-/*Reflection*/
-.rtext{
-    font-size: 14pt; 
-}
-
-@media screen and (max-width:640px){
-/*All Pages*/
-
-nav ul, nav:active ul {
-    display: none; 
-    position: absolute;
-}
-
-nav ul:hover {
-    display: block;
-}
-
-nav li {
-    text-align: center;
-    width: 100%; 
-}
-
-.navbar label, hamburger {
-    display: inline-block;
-    color: white;
-    font-style: normal;
-    font-size: 3em;
-    padding: 10px;
-}
-
-.hamitems a{
-    width: 70px;
-    border-top: 1px solid #333;
-    text-decoration: none;
-    display: block;
-    border: 3px solid #e42e2e;
-    padding: 5px;
-    width: 70px;
-    margin: 0; 
-    color:black;
-    position: relative;
-    top: 5px;
-    left: -10px
-    }
-
-.hamburger {
-    display: block;
-    height: 50px;
-    width: 50px;
-    z-index: 999;
-    opacity: 0;
-    }
-
-.hamitems{
-        display: flex;
-        flex-direction: column;
-        top: 70px;
-        right: -305px;
-        z-index: 999;
-    }
-
-.hamitems{ display: none}
-.navbar input:checked ~ .hamitems {display:block;}
-
-nav ul li ul {
-    z-index: 999;
-    right: 430px;
-    top: -5px;
-}
-
-/
