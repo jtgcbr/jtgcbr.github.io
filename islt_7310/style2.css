@@ -1,4 +1,4 @@
-h1 { color: red;}
+h1 { color:black;}
 h2 {color: grey}
 nav {justify-content: center;
 }
@@ -52,4 +52,39 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+}
+@font-face {
+    font-family: firstfont ;
+    src: url(sansation_light.woff);
+  }
+  
+  ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    background: rgb(253, 76, 76);
+    width: 150px;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+/*media queries*/ 
+@media screen and (max-width:640px)
+     header {border-top:3px;}
+     nav {border-top: 1px solid;}
+     main {float: right; height: 500px; width: 84%;}
+     img {width: 100px; height: 100px;}
+     footer {border-top: 1px solid black; clear: both;}
+
+}
+@media print {
+/<h1>; <p>; <blockquote>; <footer>/
+{#ul; #nav; #img;  {display: none} 
+{font-family:serif; color:black }
 }
