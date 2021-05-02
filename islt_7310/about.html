@@ -2,16 +2,13 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width,initial-scale=1">
-               <title>Jessica Gebauer's Website</title>
-                <link rel="sytlesheet"
-                href="style.css"> 
-                <link rel="navsheet"
-                href="nav.css">
-                <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-        <style>
-             /*semantic element styles*/
-             header {border-top:3px;}
+               <title>Jessica Gebauer's website</title>
+          <link rel="stylesheet" href="style2.css">
+
+</head>
+<style>
+  /*semantic element styles*/
+  header {border-top:3px;}
                nav {border-top: 1px solid;}
                main {float: right; height: 500px; width: 84%;}
                img {width: 50px; height: 50px;}
@@ -32,22 +29,26 @@
                     padding: 5px;
                     text-align: center; }
                     .hover{ display: inline;}
-               </style>
+    
+</style>
 </head>
 <body>
-    <nav> <ul>
-        <li><a href="index.html">HomePage</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="learn.html">Learn</a>
-            <ul>
-            <li><a>Link1</a></li>
-            <li><a>Link2</a></li>
-            <li><a>Link3</a></li>
-            </ul>
-        </li>
-        <li><a href="refrences.html">Refrences</a></li>
-        <li><a href="#contact.html">Contact</a></li>
-    </ul></nav>
+<nav class= "topnav">
+<ul>
+  <li><a href="index.html">HomePage</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Learn</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <li><a href="refrences.html">Refrences</a></li>
+    <li><a href="#contact.html">Contact</a></li>
+    </div>
+  </li>
+</ul>
+</nav>
     <h1>Disney on a Discount</h1>
         <h1>Jessica Gebauer</h1>
         <header><h2>About Me Paragraph</h2></header>
