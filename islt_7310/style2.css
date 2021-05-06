@@ -73,6 +73,29 @@ li{
     padding: 5px;
     text-align: center;
 }
+table{
+  border: 10px  black;
+  border-collapse: collapse;
+}
+th {
+  border: 10px black;
+  padding: .3em .7em;
+  text-align: center;
+  color: black;
+  background-color: rgb(226, 98, 98);
+}
+td {
+  border: 10px black;
+  padding: 4px 4px;
+  text-align: center;
+  color: black;
+}
+tr:nth-child(odd) {
+  background-color: #fbfdfd;
+}
+tr:nth-child(even) {
+  background-color: #d44f4f;
+}
 
 /*media queries*/ 
 @media screen and (max-width:640px)
