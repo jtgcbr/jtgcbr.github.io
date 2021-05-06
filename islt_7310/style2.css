@@ -53,7 +53,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-}
+
 @font-face {
     font-family: firstfont ;
     src: url(sansation_light.woff);
@@ -74,18 +74,18 @@ li{
     text-align: center;
 }
 table{
-  border: 10px  black;
+  border: 1px  black;
   border-collapse: collapse;
 }
 th {
-  border: 10px black;
+  border: 1px black;
   padding: .3em .7em;
   text-align: center;
   color: black;
   background-color: rgb(226, 98, 98);
 }
 td {
-  border: 10px black;
+  border: 1px black;
   padding: 4px 4px;
   text-align: center;
   color: black;
@@ -96,9 +96,29 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: #d44f4f;
 }
+label {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+input {
+  margin-left: 1px;
+  margin-bottom: 1px;
+  width: 250px;
+}
+textarea {
+  margin-left: 1px;
+  margin-bottom: 1px;
+  width: 250px;
+  height: 250px;
+}
+#button {
+  margin-left: 10px;
+}
+
 
 /*media queries*/ 
-@media screen and (max-width:640px)
+@media screen and (max-width:640px){
      header {border-top:3px;}
      nav {border-top: 1px solid;}
      main {float: right; height: 500px; width: 84%;}
@@ -107,7 +127,32 @@ tr:nth-child(even) {
 
 }
 @media print {
-/<h1>; <p>; <blockquote>; <footer>/
-{#ul; #nav; #img;  {display: none} 
-{font-family:serif; color:black }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+  }
+  h1, h2 {
+    font-family: Times, Times,serif;
+  }
+  nav{
+    display: none;
+  }  
+  
+  img {
+    display: none;
+  }
+  header {
+    border-bottom: 2px solid black;
+  }
+  header h2 {
+    color: black;
+    font-size: 150%;
+  }
+  header h3 {
+    color: black;
+    font-size: 110%;
+  }
+  footer {
+    border-top: 2px solid black;
+  }
 }
