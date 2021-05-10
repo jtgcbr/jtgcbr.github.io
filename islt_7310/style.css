@@ -85,7 +85,7 @@ li{
 }
 @media print {
 /<h1>; <p>; <blockquote>; <footer>/
-#ul; #nav; #img;  {display: none} 
+{#ul; #nav; #img;  {display: none} 
 {font-family:serif; color:black }
 }
 
