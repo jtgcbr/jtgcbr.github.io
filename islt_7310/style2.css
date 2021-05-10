@@ -112,41 +112,69 @@ textarea {
 
 
 /*media queries*/ 
-@media screen and (max-width:640px){
-     header {border-top:3px;}
-     nav {border-top: 1px solid;}
-     main {float: right; height: 500px; width: 84%;}
-     img {width: 100px; height: 100px;}
-     footer {border-top: 1px solid black; clear: both;}
+@media (min-width: 768px){
+
+.image {
+  width: 20%;
+  height: auto;
+  float:right;
+  }
+
+.icon { 
+  transition: all .4s ease-in; 
+}
+     
+.icon:hover { 
+  transform: scale(1.8); 
+}
+@media (max-width: 900px) {
+  th, td {
+    display: block;
+  }
+ thead {
+   display: none;
+ } 
 
 }
+
 @media print {
-  body {
-    font-family: "Times New Roman", Times, serif;
-    background-color: white;
-  }
-  h1, h2 {
-    font-family: Times, Times,serif;
-  }
-  nav{
-    display: none;
-  }  
-  
-  img {
-    display: none;
-  }
-  header {
-    border-bottom: 2px solid black;
-  }
-  header h2 {
-    color: black;
-    font-size: 150%;
-  }
-  header h3 {
-    color: black;
-    font-size: 110%;
-  }
-  footer {
-    border-top: 2px solid black;
-  }
+
+@page {
+  margin: 25mm 25mm 25mm 25mm;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+}
+h1, h2 {
+  font-family: Times, Times,serif;
+}
+#nav_menu {
+  display: none;
+}  
+aside {
+  display: none;
+}
+article {
+  width: auto;
+}
+img {
+  display: none;
+}
+header {
+  border-bottom: 2px solid black;
+}
+header h2 {
+  color: black;
+  font-size: 150%;
+}
+header h3 {
+  color: black;
+  font-size: 110%;
+}
+footer {
+  border-top: 2px solid black;
+}
+iframe{
+  display: none;
 }
